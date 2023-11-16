@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+        section {
+            padding: 2em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+    <nav>
+        <a href="#home">Accueil</a>
+        <a href="#about">À Propos</a>
+        <a href="#work">Travail</a>
+        <a href="#resume">CV</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="home">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur mon portfolio.</p>
+        <img src="photo1.jpeg" alt="Image d'accueil">
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="about">
+        <h2>À Propos</h2>
+        <p>Informations sur moi et mes compétences.</p>
+    </section>
+
+    <!-- Section Travail -->
+    <section id="work">
+        <h2>Travail</h2>
+        <p>Projets et expériences professionnelles.</p>
+    </section>
+
+    <!-- Section CV -->
+    <section id="resume">
+        <h2>CV</h2>
+        <p>Mon parcours académique et professionnel.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Utilisez le formulaire ci-dessous pour me contacter :</p>
+        <form action="/submit_form" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+    <footer>
+        
+        <p> 2023 Mon Portfolio</p>
+    </footer>
+
+</body>
+</html>
